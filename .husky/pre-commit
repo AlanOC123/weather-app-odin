@@ -1,6 +1,3 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 # Check if the test script exists in package.json
 if npm run | grep -q "test"; then
   npm test

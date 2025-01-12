@@ -59,6 +59,7 @@
   "dependencies": {
     "css-minimizer-webpack-plugin": "^7.0.0",
     "normalize.css": "^8.0.1",
+    "pexels": "^1.4.0",
     "postcss-loader": "^8.1.1",
     "terser-webpack-plugin": "^5.3.11",
     "webpack": "^5.97.1"

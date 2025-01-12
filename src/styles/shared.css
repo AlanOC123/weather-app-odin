@@ -1,0 +1,40 @@
+:root {
+  --small-padding: 0.4em;
+  --medium-padding: 0.8em;
+  --large-padding: 1.2em;
+  --extra-large-padding: 1.6em;
+  --reg-font-fam:  normal 400 1rem/1.5  'Roboto', serif;
+  --text-clr: #EEEEEE;
+  --contrast-clr-1: #111111;
+  --contrast-clr-2: #333333;
+  --pri-clr: ;
+  --acc-clr: ;
+  --window-clr: var(--contrast-clr-2)25;
+  --body-clr: linear-gradient(to top right, var(--contrast-clr-1), var(--contrast-clr-2));
+  --window-clr: linear-gradient()
+}
+
+i {
+  width: var(--large-padding);
+  height: var(--large-padding);
+  padding: var(--medium-padding);
+  border-radius: var(--small-padding);
+  display: inline-block;
+  color: var(--text-clr);
+}
+
+p,
+input, 
+body {
+  font: var(--reg-font-fam);
+  margin: 0;
+  padding: 0;
+  color: var(--text-clr);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-image: var(--body-clr);
+}
