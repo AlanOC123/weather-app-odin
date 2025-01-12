@@ -24,7 +24,7 @@ i {
 }
 
 p,
-input, 
+input,
 body {
   font: var(--reg-font-fam);
   margin: 0;
@@ -37,4 +37,16 @@ main {
   height: 100%;
   display: grid;
   background-image: var(--body-clr);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    background-color: #11111150;
+    z-index: 1;
 }
