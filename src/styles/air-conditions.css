@@ -1,0 +1,44 @@
+.current-air-conditions {
+    background-color: var(--contrast-clr-2);
+    border-radius: var(--medium-padding);
+    grid-row: 8 / -1;
+    grid-column: 1 / 7;
+
+    display: flex;
+    flex-direction: column;
+    padding: var(--large-padding);
+}
+
+.current-air-conditions-header {
+    flex: 1;
+    padding: var(--small-padding);
+}
+
+.current-air-conditions-data {
+    flex: 4;
+    display: flex;
+    padding: var(--small-padding);
+    gap: var(--large-padding);
+}
+
+.air-condition-data-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--medium-padding);
+    background-color: #33333325;
+    padding: var(--large-padding);
+}
+
+.header {
+    display: flex;
+    gap: var(--medium-padding);
+}
+
+.condition-value {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}

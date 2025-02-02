@@ -7,22 +7,89 @@
   </head>
   <body>
     <main>
-      <section class="search">
-        <input type="text" name="" id="location-search" placeholder="Enter Location">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </section>
-      <section class="current">
-        <div class="overview">
-          <p>This is an example</p>
+        <section class="location-search">
+            <input type="text" name="" id="location-search-input" placeholder="Enter Location">
+            <div class="icon" id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icon" id="current-location">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+        </section>
 
-        </div>
-        <div class="hourly"></div>
-        <div class="conditions"></div>
-      </section>
-      <section class="weekly">
-        <ul class="daily-forecast"></ul>
-      </section>
-      <div class="overlay"></div>
+        <section class="current-weather-overview">
+            <div class="current-weather-information-container">
+                <div class="current-weather-information-data-wrapper">
+                    <div class="current-weather-information">
+                        <div class="current-weather-info-text">
+                            <h1 class="current-location-name">Current Location</h1>
+                            <div class="current-chance-of-rain">Chance of Rain: <span class="precip-chance-data">0</span>%</div>
+                        </div>
+                        <h1 class="current-temperature"><span class="current-temperature-reading">9</span>°</h1>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="current-air-conditions">
+            <h2 class="current-air-conditions-header">Air Conditions</h2>
+
+            <div class="current-air-conditions-data">
+                <div class="air-condition-data-container" id="feels-like">
+                    <div class="header">
+                        <div class="icon">
+                            <i class="fa-solid fa-temperature-three-quarters"></i>
+                        </div>
+                        <p class="header-text">Feels Like</p>
+                    </div>
+                    <p class="condition-value"><span id="feels-like-temperature-data">0</span>°</p>
+                </div>
+
+                <div class="air-condition-data-container" id="humidity">
+                    <div class="header">
+                        <div class="icon">
+                            <i class="fa-solid fa-face-grin-beam-sweat"></i>
+                        </div>
+                        <p class="header-text">Humidity</p>
+                    </div>
+                    <p class="condition-value" id="humidity-data">Medium</p>
+                </div>
+
+                <div class="air-condition-data-container" id="wind-speed">
+                    <div class="header">
+                        <div class="icon">
+                            <i class="fa-solid fa-gauge-simple-high"></i>
+                        </div>
+                        <p class="header-text">Wind Speed</p>
+                    </div>
+                    <p class="condition-value"><span id="wind-speed-data">0</span> k/mh</p>
+                </div>
+
+                <div class="air-condition-data-container" id="wind-direction">
+                    <div class="header">
+                        <div class="icon">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <p class="header-text">Wind Direction</p>
+                    </div>
+                    <p class="condition-value" id="wind-direction-data">North</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="hourly-forecast">
+            <p class="hourly-forecast-header">Hourly Forecast</p>
+            <ul class="hourly-forecast-list"></ul>
+        </section>
+
+        <section class="weekly-forecast">
+            <p class="weekly-forecast-header">Next 7 Days</p>
+            <ul class="weekly-forecast-list"></ul>
+        </section>
     </main>
   </body>
 </html>

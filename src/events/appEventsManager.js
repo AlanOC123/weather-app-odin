@@ -1,4 +1,4 @@
-export default (() => {
+const appEventsManager = (() => {
     const events = {};
 
     const on = (event, fn) => {
@@ -30,3 +30,18 @@ export default (() => {
         emit,
     }
 })();
+
+const appEvents = {
+    imageUpdated: 'rwetgergfsdfsdf',
+    imageDataLoaded: 'daegdfsgdsfdsfs',
+    weatherDataUpdated: 'gergvverfsdfdsvc',
+    currentWeatherDataLoaded: 'refadscasfdasd',
+    weeklyForecastLoaded: 'eterhgfsdfwefcwefc',
+    hourlyForecastLoaded: 'tergvsdcdsfsdfvdcsdc',
+    locationSelected: 'ewrtwefewfwefw',
+    locationUpdated: 'terutyfwcsadwdcwc',
+    locationDataLoaded: 'fsdfsdfdsfgsdgvsdcsdc',
+    airConditionsLoaded: 'fsdfsdfsdfdsfsdhrturtyh',
+}
+
+export { appEvents, appEventsManager };

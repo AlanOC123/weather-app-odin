@@ -1,5 +1,13 @@
 import './styles.css';
 import './fontAwesomeScript';
 import './fontsScript';
-import './modules/pexel';
+import currentWeatherInfo from './components/currentWeatherInfo';
+import airConditions from './components/airConditions';
+import hourlyForecast from './components/hourlyForecast';
+import weeklyForecast from './components/weeklyForecast';
+import weatherModule from './modules/weatherModule';
+import geolocationModule from './modules/geolocationModule';
+import locationSearch from './components/locationSearch';
+import imageModule from './modules/imageModule';
+import backgroundInterface from './components/backgroundInterface';
 if (module.hot) module.hot.accept();
